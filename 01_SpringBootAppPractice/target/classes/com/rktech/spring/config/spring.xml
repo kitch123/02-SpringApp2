@@ -1,0 +1,23 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+   
+   <!-- configuring the Java Class as spring Bean -->
+   <bean id="wb" class="com.rktech.spring.beans.Welcome">
+	   
+	   <!-- Injecting the value of message property using setter method -->
+	    <property name="message" value="Welcome To RKTECH For Spring Framework"/>
+	    
+   </bean>
+   
+      <!-- configuring the Java Class as spring Bean -->
+   <bean id="db" class="com.rktech.spring.beans.Demo">
+	   
+	   <!-- Injecting the value of message property using constructor method -->
+        <constructor-arg name="topicName" value="Welcome To RKTECH For Spring Framework"/>
+	    
+   </bean>       
+       
+</beans>       
