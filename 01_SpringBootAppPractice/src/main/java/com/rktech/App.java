@@ -10,7 +10,7 @@ import com.rktech.spring.beans.Demo;
 
 public class App {
 	public static void main(String[] args) {
-
+       //ADD
 		Resource resource = new ClassPathResource("com/rktech/spring/config/spring.xml");
 		BeanFactory beanFactory = new XmlBeanFactory(resource);
 
